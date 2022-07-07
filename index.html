@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Title</title>
+</head>
+<body>
+    <div id="app">
+        <div id="game_grid">
+            <div class="cell" data-x="0" data-y="0"></div>
+            <div class="cell" data-x="1" data-y="0"></div>
+            <div class="cell" data-x="2" data-y="0"></div>
+            <div class="cell" data-x="0" data-y="1"></div>
+            <div class="cell" data-x="1" data-y="1"></div>
+            <div class="cell" data-x="2" data-y="1"></div>
+            <div class="cell" data-x="0" data-y="2"></div>
+            <div class="cell" data-x="1" data-y="2"></div>
+            <div class="cell" data-x="2" data-y="2"></div>
+        </div>
+        <div id="game_result">
+            Игра окончена. <span class="winner"></span>
+            <button type="button" onclick="window.location.reload()">Начать заново</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

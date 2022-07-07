@@ -1,0 +1,6 @@
+{
+  "compilerOptions": {
+    "lib": ["DOM", "ES2015.Core", "DOM.Iterable", "ES2015.Collection", "ES2015.Iterable", "ES2015"],
+    "target": "es6"
+  }
+}
