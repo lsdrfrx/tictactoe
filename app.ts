@@ -13,6 +13,22 @@ function contains(a, b): boolean {
     })
 }
 
+interface App {
+    ends: Array<any>;
+    startGame();
+    endGame(side: string);
+}
+
+interface Grid {
+    root: App;
+    turnSwitch: boolean;
+    turns: {crosses: Array<any>, circles: Array<any>};
+    cells: Array<HTMLElement>;
+    bindCells();
+    makeMove(cell: HTMLElement);
+    checkEnd();
+}
+
 class App {
     ends: Array<any> = [
         [
@@ -136,8 +152,7 @@ class Grid {
 
 }
 
-const app = new App()
-const grid = new Grid(app)
-console.log('Сетка:', grid)
+const app: App = new App()
+const grid: Grid = new Grid(app)
 
 app.startGame()

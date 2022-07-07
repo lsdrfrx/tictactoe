@@ -127,5 +127,4 @@ class Grid {
 }
 const app = new App();
 const grid = new Grid(app);
-console.log('Сетка:', grid);
 app.startGame();
